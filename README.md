@@ -37,6 +37,9 @@ npm install
 # Start development server
 npm run dev
 
+# Start development server and open in Chrome
+npm run chrome
+
 # Build for production
 npm run build
 
@@ -102,6 +105,8 @@ Works in all modern browsers that support:
 - CSS filters
 - ES6+ JavaScript
 - Canvas API (for PNG export)
+
+**Chrome Quick Launch**: Use `npm run chrome` to automatically start the dev server and open the app in Google Chrome (works on macOS, Windows, and Linux).
 
 ## Performance
 
