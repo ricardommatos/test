@@ -1,7 +1,7 @@
 {
-  "name": "prismlab",
+  "name": "emoji-counter",
   "version": "1.0.0",
-  "description": "Vector 3D Prism Generator",
+  "description": "Simple app to count emojis in images",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -9,9 +9,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "lucide-react": "^0.294.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "lucide-react": "^0.294.0"
+    "tesseract.js": "^7.0.0"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^4.2.1",
