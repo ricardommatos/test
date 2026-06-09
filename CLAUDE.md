@@ -2,6 +2,10 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
+## Personal Preferences
+
+- **Granola**: When querying Granola meetings, only include calls related to Code and Theory (participants with @codeandtheory.com emails or C&T projects such as TIME, Firefly, Pirilampos, etc.). Ignore all unrelated/personal calls.
+
 ## Project Overview
 
 PrismLab is a single-page React application that generates 3D geometric shapes (prisms) with aurora-style visual effects. The application uses custom 3D mathematics for rendering without external 3D libraries.
