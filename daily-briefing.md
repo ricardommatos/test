@@ -16,6 +16,10 @@ Gera o meu briefing diário de trabalho para hoje, usando os connectors disponí
 
 3. **Granola** — follow-ups, decisões e action items das reuniões recentes.
    - **IMPORTANTE: incluir apenas calls relacionadas com a Code and Theory** (participantes @codeandtheory.com ou projetos C&T como TIME, Firefly, Pirilampos). Ignorar todas as restantes.
+   - **Estratégia de obtenção (com fallback, porque o Granola dá timeout às vezes):**
+     1. Tentar `query_granola_meetings` (resumo de decisões + action items).
+     2. Se der timeout, **repetir 1 vez**.
+     3. Se voltar a falhar, **fallback** para `list_meetings` + `get_meetings` nas reuniões C&T do dia — o briefing nunca deve sair vazio.
 
 4. **Slack** — mensagens dirigidas a mim e atividade recente relevante.
 
