@@ -24,6 +24,11 @@ npm run preview
 
 ## Architecture
 
+### Views
+`src/App.jsx` toggles between two views:
+- **Firefly World** (`src/FireflyWorld.jsx`, default) — a three.js WebGL world inspired by the Firefly poster series: four "poster districts" (ring/dot grids, layered card stacks, headline text planes) around a central twisting totem, an extrudable floor field, orbital rings and drifting spark particles. Drag rotates the world, scroll zooms; sliders control extrusion and auto-rotation; a toggle starts generative ambient audio (Web Audio API — warm pad, filtered noise wash, sparse pentatonic blips through a soft echo).
+- **Prism Lab** (`PrismLab.jsx`) — the original SVG prism generator, described below.
+
 ### Single-Component Design
 The entire application is a single React component (`PrismLab.jsx`) with ~700 lines. The component is organized into clearly marked sections:
 
